@@ -1,0 +1,255 @@
+import 'package:flutter/material.dart';
+import 'dart:ui';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_app/utils.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class Register6 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return 
+    Container(
+      decoration: BoxDecoration(
+        color: Color(0xFFFFFFFF),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Stack(
+        children: [
+          Positioned(
+            left: -7,
+            right: -7,
+            top: -15,
+            bottom: -7,
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage(
+                    'assets/images/image_382.png',
+                  ),
+                ),
+              ),
+              child: Container(
+                width: 428,
+                height: 926,
+              ),
+            ),
+          ),
+    Container(
+            padding: EdgeInsets.fromLTRB(7, 15, 7, 7),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  margin: EdgeInsets.fromLTRB(30.8, 0, 15.7, 503),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        child: RichText(
+                          text: TextSpan(
+                            style: GoogleFonts.getFont(
+                              'Inter',
+                              fontWeight: FontWeight.w100,
+                              fontSize: 14,
+                              letterSpacing: -0.3,
+                              color: Color(0xFF010101),
+                            ),
+                            children: [
+                              TextSpan(
+                                text: '9:4',
+                                style: GoogleFonts.getFont(
+                                  'Inter',
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 14,
+                                  height: 1.3,
+                                  letterSpacing: -0.3,
+                                ),
+                              ),
+                              TextSpan(
+                                text: '1',
+                                style: GoogleFonts.getFont(
+                                  'Inter',
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 14,
+                                  height: 1.3,
+                                  letterSpacing: -0.3,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.fromLTRB(0, 2.3, 0, 3.3),
+                        child: SizedBox(
+                          width: 71.9,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.fromLTRB(0, 0.3, 4.4, 0.3),
+                                child: SizedBox(
+                                  width: 18.8,
+                                  height: 10.7,
+                                  child: SvgPicture.asset(
+                                    'assets/vectors/cellular_connection_27_x2.svg',
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                margin: EdgeInsets.fromLTRB(0, 0, 7.5, 0.4),
+                                child: SizedBox(
+                                  width: 16.9,
+                                  height: 11,
+                                  child: SvgPicture.asset(
+                                    'assets/vectors/wifi_36_x2.svg',
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                child: SizedBox(
+                                  width: 24.3,
+                                  height: 11.3,
+                                  child: SvgPicture.asset(
+                                    'assets/vectors/battery_59_x2.svg',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                ClipRect(
+                  child: BackdropFilter(
+                    filter: ImageFilter.blur(
+                      sigmaX: 15,
+                      sigmaY: 15,
+                    ),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Color(0xCCFFFFFF),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Container(
+                        padding: EdgeInsets.fromLTRB(21, 60, 21, 60),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.fromLTRB(1.1, 0, 1.1, 64),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                                    child: Text(
+                                      'See What’s on Near You',
+                                      style: GoogleFonts.getFont(
+                                        'Inter',
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 32,
+                                        color: Color(0xFF010101),
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    margin: EdgeInsets.fromLTRB(24.9, 0, 24.9, 0),
+                                    child: Text(
+                                      'Select an area to get a tailored experience',
+                                      style: GoogleFonts.getFont(
+                                        'Inter',
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 16,
+                                        height: 1.4,
+                                        color: Color(0xFF010101),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  margin: EdgeInsets.fromLTRB(0, 0, 0, 14),
+                                  child: ClipRect(
+                                    child: BackdropFilter(
+                                      filter: ImageFilter.blur(
+                                        sigmaX: 10,
+                                        sigmaY: 10,
+                                      ),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Color(0xFFFF1515),
+                                          borderRadius: BorderRadius.circular(6),
+                                        ),
+                                        child: Container(
+                                          padding: EdgeInsets.fromLTRB(0, 19, 0, 19),
+                                          child: Text(
+                                            'Use Current Location',
+                                            style: GoogleFonts.getFont(
+                                              'Inter',
+                                              fontWeight: FontWeight.w600,
+                                              fontSize: 16,
+                                              color: Color(0xFFFFFFFF),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                ClipRect(
+                                  child: BackdropFilter(
+                                    filter: ImageFilter.blur(
+                                      sigmaX: 10,
+                                      sigmaY: 10,
+                                    ),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFFFFFFFF),
+                                        borderRadius: BorderRadius.circular(6),
+                                      ),
+                                      child: Container(
+                                        padding: EdgeInsets.fromLTRB(0, 19, 0, 19),
+                                        child: Text(
+                                          'Choose Location',
+                                          style: GoogleFonts.getFont(
+                                            'Inter',
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 16,
+                                            color: Color(0xFF010101),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
